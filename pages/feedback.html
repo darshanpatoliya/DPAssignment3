@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>4 best indoor plants</title>
+    <link rel="shortcut icon" href="../images/potted-plant.png">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img id="img1" src="../images/potted-plant.png" alt="icon of a plant">
+        <h2>Plants</h2>
+        <h3>Air Purifying Indoor Plants</h3>
+    </header>
+
+    <nav id="nav_menu">
+		<ul>
+			<li><a href="../index.html"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="image.html"><i class="fa fa-image"></i>Images</a>
+				<ul>
+					<li><a href="image.html">Images of Plants</a></li>
+					<li><a href="image.html">Tiled-Formatted</a>
+						<ul>
+							<li><a href="image.html">Format-1</a></li>
+							<li><a href="image.html">Format-2</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+			<li><a href="feedback.html" class="current"><i class="fa fa-commenting-o"></i>Feedback</a></li>
+		</ul>
+	</nav>
+
+    <main>
+        <section>
+            <fieldset id="first">
+                <legend>My website is</legend>
+                <input type="checkbox" name="Fun to visit" id="Fun to visit" value="Fun to visit">
+                <label tabindex="1" for="Fun to visit">Fun to visit</label> <br>
+                <input type="checkbox" name="Well Designed" id="Well Designed" value="Well Designed">
+                <label tabindex="2" for="Well Designed">Well Designed</label> <br>
+                <input type="checkbox" name="Uses good colours" id="Uses good colours" value="Uses good colours">
+                <label tabindex="3" for="Uses good colours">Uses good colours</label> <br>
+                <input type="checkbox" name="Easy to use" id="Easy to use" value="Easy to use">
+                <label tabindex="4" for="Easy to use">Easy to use</label>
+            </fieldset>
+            <fieldset id="second">
+                <legend>Will you visit again?</legend>
+                <input type="radio" name="feedback" id="yes" value="yes">
+                <label tabindex="5" for="yes">Yes</label>
+                <input type="radio" name="feedback" id="no" value="no">
+                <label tabindex="6" for="no">No</label>
+            </fieldset>
+            <button onclick="myFunction()" type="submit">Submit</button>
+            <script>
+                function myFunction() {
+                    alert("Your form has been submitted.");
+                }
+            </script>
+            <script>
+                document.getElementsByTagName('label')[0].focus();
+            </script>
+        </section>
+
+        <article>
+            <form>
+                <label for="first_name">First Name:</label>
+                <input placeholder="Enter your first name" type="text" name="first_name" id="first_name" required><br>
+                <label for="last_name">Last Name:</label>
+                <input placeholder="Enter your last name" type="text" name="last_name" id="last_name" required><br>
+                <label for="email">E-Mail:</label>
+                <input placeholder="Enter your Email-id" type="email" name="email" id="email" required><br>
+
+                <label for="plant_selection">Select Plants</label>
+                <select name="Plants" id="list">
+                    <optgroup label="Plants">
+                        <option value="Pothos Plant">Pothos Plant</option>
+                        <option value="Snake Plant">Snake Plant</option>
+                        <option value="Monstera Deleciosa">Monstera Deleciosa</option>
+                    </optgroup>
+                    <optgroup label="Categary 2">
+                        <option value="Chinese Evergreen">Chinese Evergreen"</option>
+                        <option value="Pothos">Pothos</option>
+                        <option value="Snake Plant">Snake Plant</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <label for="favourite component">Favourite Component:</label>
+                <select name="favourite component" id="favourite component" multiple>
+                    <option value="Images">Home Page</option>
+                    <option value="Easy Navigation">Images Collection</option>
+                    <option value="Content">Ease Of Navigation</option>
+                    <option value="information">Content Of Plants</option>
+                </select>
+                <br><br>
+                <label for="textarea">Give your valuable feedback:</label>
+                <textarea id="textarea" name="feedback_things" rows="7" cols="50"></textarea>
+                <label>&nbsp;</label>
+                <button onclick="myFunction()">Submit</button>
+                <script>
+                    function myFunction() {
+                        alert("Your form has been submitted.");
+                    }
+                </script>
+                <button type="reset" id="clear" value="Reset">Reset</button><br>
+            </form>
+        </article>
+    </main>
+
+    <aside>
+        <h4>Navigation Area</h4>
+        <figure>
+			<a href="../index.html"><img src="../thumbnails/Circular_House-512.png" alt="icon of a homepage"></a>
+			<!--Icons made by Freepik from www.flaticon.com-->
+		</figure>
+		<p>Home Page</p>
+
+		<figure>
+			<a href="image.html"><img src="../thumbnails/image.png" alt="icon of imagepage"></a>
+			<!--Icons made by Freepik from www.flaticon.com-->
+		</figure>
+		<p>Image Page</p>
+		<figure>
+			<a href="feedback.html"><img src="../thumbnails/feedback.png" alt="icon of feedbackpage"></a>
+			<!--Icons made by Freepik from www.flaticon.com-->
+        </figure>
+        <p>Feedback Page</p>
+    </aside>
+
+    <footer>
+        <p>Copyright 2020 - IndoorPlants.com</p>
+    </footer>
+</body>
+
+</html>
